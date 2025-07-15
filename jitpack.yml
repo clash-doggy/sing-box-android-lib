@@ -1,0 +1,9 @@
+# 启用 Git LFS
+lfs:
+  install: true
+# 指定一个 JDK 版本
+jdk:
+  - openjdk17
+# 覆盖 JitPack 的默认命令，只运行我们需要的任务
+install:
+  - ./gradlew publishToMavenLocal
