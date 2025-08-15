@@ -6,7 +6,7 @@ plugins {
 // 这里的 artifactId 最好和你的仓库名保持一致或自定义
 // version 必须和你的 Git 标签完全一致
 group = 'com.github.singbox-android'
-version = '1.11.15' // <-- 重要：这个版本号需要和你将要创建的 Git 标签一致
+version = '1.12.0' // <-- 重要：这个版本号需要和你将要创建的 Git 标签一致
 
 publishing {
     publications {
