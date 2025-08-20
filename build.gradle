@@ -2,19 +2,14 @@ plugins {
     id 'maven-publish'
 }
 
-// JitPack 会自动使用你的 GitHub 用户名作为 group
-// 这里的 artifactId 最好和你的仓库名保持一致或自定义
-// version 必须和你的 Git 标签完全一致
-group = 'com.github.clash-doggy'
-version = '1.12.2' // <-- 重要：这个版本号需要和你将要创建的 Git 标签一致
+group = 'com.github.singbox-android'
+version = '1.12.2'
 
 publishing {
     publications {
         maven(MavenPublication) {
-            // 这里定义发布的组件名，可以自定义
-            artifactId = 'sing-box-android-lib'
-            // 告诉 Gradle，要发布的产物就是这个 AAR 文件
-            artifact 'sing-box-android-lib.aar'
+            artifactId = 'libbox'
+            artifact 'libbox.aar'
         }
     }
 }
